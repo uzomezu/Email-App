@@ -52,8 +52,10 @@ const mailer = (subject, body, recipients) => {
         if(err) {
             throw err
         }
-        console.log(response);
+        console.log(response)
         smtpTransport.close();
+        
+        
     })
 }
 
