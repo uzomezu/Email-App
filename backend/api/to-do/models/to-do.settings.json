@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "to_dos",
+  "info": {
+    "name": "To Do"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "isComplete": {
+      "type": "boolean"
+    },
+    "user": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "deadline": {
+      "type": "datetime"
+    }
+  }
+}
